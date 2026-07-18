@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #0b3d91;
+    --secondary-color: #f4f4f4;
+    --accent-color: #c5280d;
+    --text-color: #222;
+    --card-background: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: white;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    padding: 0;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
+}
+
+.data,
+.weather {
+    padding: 2rem;
+    text-align: center;
+}
+
+.data {
+    background-color: var(--secondary-color);
+}
+
+.weather {
+    background-color: white;
+}
+
+.data h2,
+.weather h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.data ul,
+.weather ul {
+    list-style: none;
+}
+
+.data li,
+.weather li {
+    margin: 0.6rem 0;
+    line-height: 1.5;
+}
+
+.weather img {
+    display: block;
+    width: 70px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+}
+
+#lastModified {
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        min-height: 600px;
+        object-fit: cover;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        width: 320px;
+        padding: 1.5rem;
+        background-color: var(--card-background);
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+        text-align: left;
+    }
+
+    .data {
+        top: 40px;
+        left: 30px;
+    }
+
+    .weather {
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .data h2,
+    .weather h2 {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 0.8rem;
+        margin-left: -2rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}

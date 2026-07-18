@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Naperville | WDD 131</title>
+
+    <meta name="description" content="Learn about Naperville, Illinois, including its history, weather, and interesting facts.">
+
+    <meta name="author" content="Lucas Feliciana">
+
+    <link rel="stylesheet" href="styles/place.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Naperville</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+
+                <source srcset="images/naperville-large.webp" media="(min-width: 768px)">
+
+                <img src="images/naperville-small.webp"
+                    alt="View of Naperville Riverwalk">
+
+            </picture>
+        </section>
+
+        <section class="data">
+
+            <h2>Data</h2>
+
+            <ul>
+                <li><strong>State:</strong> Illinois</li>
+                <li><strong>County:</strong> DuPage & Will</li>
+                <li><strong>Population:</strong> 150,000+</li>
+                <li><strong>Founded:</strong> 1831</li>
+                <li><strong>Area:</strong> 39 square miles</li>
+                <li><strong>Time Zone:</strong> Central Time (CT)</li>
+            </ul>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Weather</h2>
+
+            <img src="images/weather.svg"
+                alt="Weather Icon">
+
+            <ul>
+                <li><strong>Temperature:</strong> <span id="temperature">40°F</span></li>
+
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+
+                <li><strong>Wind:</strong> <span id="wind-speed">8 mph</span></li>
+
+                <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            | Lucas Feliciana | Illinois
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
