@@ -46,7 +46,7 @@ const temples = [
         templeName: "Salt Lake",
         location: "Salt Lake City, Utah, United States",
         dedicated: "1893, April, 6",
-        area: 3822047,
+        area: 382207,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg"
     },
     {
@@ -83,7 +83,8 @@ const temples = [
         dedicated: "1978, October, 30",
         area: 59246,
         imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
-    }]
+    }];
+
 const year = document.querySelector("#currentyear");
 year.textContent = new Date().getFullYear();
 
@@ -164,7 +165,7 @@ large.addEventListener("click", () => {
 
 small.addEventListener("click", () => {
     const smallTemples = temples.filter(temple =>
-        temple.area < 20000
+        temple.area < 10000
     );
 
     displayTemples(smallTemples);
