@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Header */
+
+header {
+    background-color: #4b236b;
+    color: white;
+    padding: 1rem;
+}
+
+.site-title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+#menu {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navigation */
+
+nav {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: #ffffff;
+    color: #4b236b;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 1rem 0;
+    text-align: center;
+    color: #4b236b;
+}
+
+/* Temple cards container */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Individual temple card */
+
+.temple-card {
+    padding: 1rem;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+.temple-card h2 {
+    margin-bottom: 0.75rem;
+    color: #222222;
+}
+
+.temple-card p {
+    margin: 0.35rem 0;
+}
+
+.temple-card span {
+    color: #4b236b;
+    font-weight: 700;
+}
+
+.temple-card img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    margin-top: 1rem;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #777777;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: #4b236b;
+    color: white;
+}
+
+footer p {
+    margin: 0.4rem;
+}
+
+#lastModified {
+    color: #ffff99;
+}
