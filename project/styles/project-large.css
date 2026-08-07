@@ -12,9 +12,10 @@
     }
 
     .logo img {
-        width: 820px;
-        height: 300px;
-        margin-top: 2rem;
+    width: 455px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 0;
     }
 
     #menu {
