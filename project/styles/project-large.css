@@ -76,9 +76,7 @@
         object-fit: cover;
     }
 
-    /* =========================
-       SERVICES
-    ========================= */
+    /*SERVICES*/
 
     .services-container {
         grid-template-columns: repeat(3, 1fr);
@@ -95,9 +93,7 @@
         box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
     }
 
-    /* =========================
-       WHY CHOOSE US
-    ========================= */
+    /*WHY CHOOSE US*/
 
     .why-us ul {
         display: grid;
@@ -110,9 +106,7 @@
         margin-bottom: 0;
     }
 
-    /* =========================
-       BEFORE AND AFTER
-    ========================= */
+    /*BEFORE AND AFTER*/
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
@@ -122,9 +116,7 @@
         height: 350px;
     }
 
-    /* =========================
-       TESTIMONIALS
-    ========================= */
+    /*TESTIMONIALS*/
 
     .testimonials {
         display: grid;
@@ -141,9 +133,7 @@
         margin-bottom: 0;
     }
 
-    /* =========================
-       FOOTER
-    ========================= */
+    /*FOOTER*/
 
     footer {
         display: flex;
