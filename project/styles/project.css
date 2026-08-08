@@ -227,51 +227,79 @@ header nav a:hover {
 }
 
 .why-us ul {
-    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1100px;
     margin: 0 auto;
     list-style: none;
 }
 
 .why-us li {
     position: relative;
-    margin-bottom: 1rem;
-    padding: 1rem 1rem 1rem 3rem;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.25rem 1.25rem 1.25rem 3.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.08);
 }
 
 .why-us li::before {
     content: "✓";
     position: absolute;
     top: 50%;
-    left: 1rem;
+    left: 1.15rem;
     color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     transform: translateY(-50%);
 }
 
-/*BEFORE AND AFTER*/
+/* BEFORE AND AFTER */
 
 .before-after {
     background-color: var(--light-background);
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: -0.5rem auto 2rem;
+    color: var(--light-text);
+    text-align: center;
 }
 
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.gallery img {
-    border-radius: 10px;
+.before-after-card {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--white);
     box-shadow: var(--shadow);
+}
+
+.before-after-card img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
+.before-after-card figcaption {
+    padding: 1rem;
+    color: var(--primary-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
 /*TESTIMONIALS*/
+
+/* TESTIMONIALS */
 
 .testimonials {
     background-color: var(--white);
@@ -280,9 +308,8 @@ header nav a:hover {
 .testimonials article {
     max-width: 650px;
     margin: 0 auto 1.5rem;
-    padding: 1.5rem;
-    border-left: 5px solid var(--accent-color);
-    border-radius: 8px;
+    padding: 1.75rem;
+    border-radius: 12px;
     background-color: var(--light-background);
     box-shadow: var(--shadow);
 }
@@ -291,32 +318,56 @@ header nav a:hover {
     margin-bottom: 0;
 }
 
+.testimonials h3 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    letter-spacing: 0.15rem;
+}
+
 .testimonials p {
     margin-bottom: 1rem;
     color: var(--light-text);
     font-style: italic;
 }
 
-.testimonials h3 {
-    color: var(--accent-color);
-    letter-spacing: 0.15rem;
+.testimonials strong,
+.testimonials span {
+    display: block;
+}
+
+.testimonials strong {
+    color: var(--primary-color);
+}
+
+.testimonials span {
+    margin-top: 0.2rem;
+    color: var(--light-text);
+    font-size: 0.9rem;
 }
 
 /*CALL TO ACTION*/
 
 .cta {
+    padding: 4rem 1.25rem;
     background-color: var(--secondary-color);
     color: var(--white);
     text-align: center;
 }
 
 .cta h2 {
+    margin-bottom: 1rem;
     color: var(--white);
 }
 
 .cta p {
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 auto 1.75rem;
+    font-size: 1.05rem;
+}
+
+.cta .button {
+    background-color: var(--accent-color);
+    color: var(--dark-text);
 }
 
 /*FOOTER*/
@@ -338,4 +389,181 @@ footer nav a {
 
 footer nav a:hover {
     text-decoration: underline;
+}
+
+/* SERVICES PAGE */
+
+.services-hero {
+    padding: 4rem 1.25rem;
+    background-color: var(--light-background);
+    text-align: center;
+}
+
+.services-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.services-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--light-text);
+}
+
+.services-page {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-detail {
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.service-detail img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.service-detail div {
+    padding: 1.5rem;
+}
+
+.service-detail h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.service-detail p {
+    margin-bottom: 1rem;
+    color: var(--light-text);
+}
+
+.service-detail ul {
+    padding-left: 1.25rem;
+}
+
+.service-detail li {
+    margin-bottom: 0.5rem;
+}
+
+/* CONTACT PAGE */
+
+.contact-hero {
+    padding: 4rem 1.25rem;
+    background-color: var(--light-background);
+    text-align: center;
+}
+
+.contact-hero h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+    font-size: 2.2rem;
+}
+
+.contact-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--light-text);
+}
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info,
+#estimate-form {
+    padding: 1.75rem;
+    border-radius: 12px;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+}
+
+.contact-info h2,
+#estimate-form h2 {
+    margin-bottom: 1.25rem;
+    text-align: left;
+}
+
+.contact-info > p {
+    margin-bottom: 2rem;
+    color: var(--light-text);
+}
+
+.contact-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item h3 {
+    margin-bottom: 0.35rem;
+    color: var(--primary-color);
+}
+
+.contact-item p {
+    color: var(--light-text);
+}
+
+/* FORM */
+
+#estimate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#estimate-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#estimate-form input,
+#estimate-form select,
+#estimate-form textarea {
+    width: 100%;
+    padding: 0.85rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--dark-text);
+    font: inherit;
+}
+
+#estimate-form textarea {
+    resize: vertical;
+}
+
+#estimate-form input:focus,
+#estimate-form select:focus,
+#estimate-form textarea:focus {
+    border-color: var(--secondary-color);
+    outline: 2px solid rgba(31, 111, 139, 0.15);
+}
+
+#estimate-form .button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+#form-message {
+    min-height: 1.5rem;
+    font-weight: 600;
+    text-align: center;
 }

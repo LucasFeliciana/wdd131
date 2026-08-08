@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Vexa Cleaning Services</title>
+
+    <meta name="description"
+        content="Contact Vexa Cleaning Services to request a free estimate for professional upholstery, mattress, and carpet cleaning.">
+
+    <meta name="author" content="Lucas Feliciana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo-horizontal.jpg"
+                     alt="Vexa Cleaning Services logo">
+            </a>
+        </div>
+
+        <button id="menu"></button>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="contact-hero">
+
+            <h1>Request a Free Estimate</h1>
+
+            <p>
+                Tell us what you need cleaned and we will help you find
+                the right service for your home.
+            </p>
+
+        </section>
+
+
+        <section class="contact-section">
+
+            <div class="contact-info">
+
+                <h2>Contact Vexa</h2>
+
+                <p>
+                    Have questions about our cleaning services?
+                    Send us a message and tell us how we can help.
+                </p>
+
+                <div class="contact-item">
+                    <h3>Service Area</h3>
+                    <p>Naperville and surrounding communities.</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>info@vexacleaning.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Free Estimates</h3>
+                    <p>
+                        Fill out the form and provide a few details about
+                        the service you are interested in.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <form id="estimate-form">
+
+                <h2>Get Your Free Estimate</h2>
+
+                <label for="name">
+                    Full Name
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           required>
+                </label>
+
+
+                <label for="email">
+                    Email
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           required>
+                </label>
+
+
+                <label for="phone">
+                    Phone Number
+                    <input type="tel"
+                           id="phone"
+                           name="phone"
+                           required>
+                </label>
+
+
+                <label for="service">
+                    Service
+                    <select id="service"
+                            name="service"
+                            required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                    </select>
+                </label>
+
+
+                <label for="message">
+                    Tell us what you need cleaned
+                    <textarea id="message"
+                              name="message"
+                              rows="6"
+                              required></textarea>
+                </label>
+
+
+                <button type="submit" class="button">
+                    Request Estimate
+                </button>
+
+                <div id="form-message"></div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            ©2026 | Vexa Cleaning Services | Lucas Feliciana
+        </p>
+
+        <nav>
+            <a href="references.html">References</a>
+        </nav>
+
+    </footer>
+
+</body>
+
+</html>
