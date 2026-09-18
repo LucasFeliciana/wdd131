@@ -480,7 +480,7 @@ footer nav a:hover {
 }
 
 .contact-info,
-#estimate-form {
+.contact-options {
     padding: 1.75rem;
     border-radius: 12px;
     background-color: var(--white);
@@ -488,12 +488,13 @@ footer nav a:hover {
 }
 
 .contact-info h2,
-#estimate-form h2 {
+.contact-options h2 {
     margin-bottom: 1.25rem;
     text-align: left;
 }
 
-.contact-info > p {
+.contact-info > p,
+.contact-options > p {
     margin-bottom: 2rem;
     color: var(--light-text);
 }
@@ -515,53 +516,64 @@ footer nav a:hover {
     color: var(--light-text);
 }
 
-/* FORM */
 
-#estimate-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+/* CONTACT BUTTONS */
+
+.contact-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-#estimate-form label {
+.contact-button {
     display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
     color: var(--primary-color);
-    font-weight: 600;
-}
-
-#estimate-form input,
-#estimate-form select,
-#estimate-form textarea {
-    width: 100%;
-    padding: 0.85rem;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    background-color: var(--white);
-    color: var(--dark-text);
-    font: inherit;
-}
-
-#estimate-form textarea {
-    resize: vertical;
-}
-
-#estimate-form input:focus,
-#estimate-form select:focus,
-#estimate-form textarea:focus {
-    border-color: var(--secondary-color);
-    outline: 2px solid rgba(31, 111, 139, 0.15);
-}
-
-#estimate-form .button {
-    width: 100%;
-    border: none;
-    cursor: pointer;
-}
-
-#form-message {
-    min-height: 1.5rem;
-    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
     text-align: center;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
+
+.contact-button i {
+    font-size: 1.2rem;
+}
+
+.contact-button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.primary-contact {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    color: var(--dark-text);
+}
+
+.primary-contact:hover {
+    border-color: #ee8f41;
+    background-color: #ee8f41;
+    color: var(--dark-text);
+}
+
+.whatsapp-button {
+    border-color: #25d366;
+    color: #25d366;
+}
+
+.whatsapp-button:hover {
+    background-color: #25d366;
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
