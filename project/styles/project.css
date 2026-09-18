@@ -169,7 +169,7 @@ header nav a:hover {
 .hero p {
     max-width: 600px;
     margin: 0 auto 1.75rem;
-    color: var(--light-text);
+    
 }
 
 .hero img {
@@ -232,6 +232,18 @@ header nav a:hover {
 .whatsapp-home:hover {
     background-color: #25d366;
     color: var(--white);
+}
+
+.estimate-text{
+    margin: 2rem 0 1.5rem;
+    padding: 0.9rem 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 7px;
+    background-color: #ee8f41;
+    color: var(--dark-text);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-align: center;
 }
 
 /*SERVICES*/
