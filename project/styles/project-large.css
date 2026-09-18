@@ -72,6 +72,12 @@
         min-height: 500px;
         object-fit: cover;
     }
+    
+    /* HOME CONTACT OPTIONS */
+
+    .home-contact-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     /*SERVICES*/
 
